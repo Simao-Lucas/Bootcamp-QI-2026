@@ -1,0 +1,6 @@
+from controllers.company_controller import CompanyController
+from controllers.position_controller import PositionController
+from controllers.employee_controller import EmployeeController
+from controllers.account_controller import AccountController
+from controllers.transfer_controller import TransferController
+from controllers.payroll_controller import PayrollController

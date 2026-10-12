@@ -1,0 +1,14 @@
+{
+  "title": "PostPayroll",
+  "type": "object",
+  "properties": {
+    "reference_month": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+    }
+  },
+  "required": [
+    "reference_month"
+  ],
+  "additionalProperties": false
+}

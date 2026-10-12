@@ -1,0 +1,2 @@
+from connectors.bankslip_connector import BankSlipConnector
+from connectors.calculation_connector import CalculationConnector

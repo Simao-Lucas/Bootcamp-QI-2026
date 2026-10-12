@@ -1,0 +1,14 @@
+{
+  "title": "PutCompany",
+  "type": "object",
+  "properties": {
+    "fee_amount": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "fee_amount"
+  ],
+  "additionalProperties": false
+}

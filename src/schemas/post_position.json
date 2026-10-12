@@ -1,0 +1,20 @@
+{
+  "title": "PostPosition",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "salary_amount": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "name",
+    "salary_amount"
+  ],
+  "additionalProperties": false
+}

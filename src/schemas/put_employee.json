@@ -1,0 +1,17 @@
+{
+  "title": "PutEmployee",
+  "type": "object",
+  "properties": {
+    "position_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 36
+    },
+    "terminated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "minProperties": 1,
+  "additionalProperties": false
+}

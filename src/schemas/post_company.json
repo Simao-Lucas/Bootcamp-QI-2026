@@ -1,0 +1,37 @@
+{
+  "title": "PostCompany",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "document_number": {
+      "type": "string",
+      "pattern": "^\\d{2}\\.\\d{3}\\.\\d{3}/\\d{4}-\\d{2}$"
+    },
+    "email": {
+      "type": "string",
+      "maxLength": 255,
+      "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+    },
+    "payment_day": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 28
+    },
+    "fee_amount": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "name",
+    "document_number",
+    "email",
+    "payment_day",
+    "fee_amount"
+  ],
+  "additionalProperties": false
+}

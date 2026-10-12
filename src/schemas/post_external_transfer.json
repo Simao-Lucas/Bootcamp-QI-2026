@@ -1,0 +1,50 @@
+{
+  "title": "PostExternalTransfer",
+  "type": "object",
+  "properties": {
+    "source_account_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 36
+    },
+    "amount": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "destination": {
+      "type": "object",
+      "properties": {
+        "bank_code": {
+          "type": "string",
+          "pattern": "^[0-9]{3}$"
+        },
+        "branch_number": {
+          "type": "string",
+          "pattern": "^[0-9]{4}$"
+        },
+        "account_number": {
+          "type": "string",
+          "pattern": "^[0-9]{1,12}-[0-9Xx]$"
+        }
+      },
+      "required": [
+        "bank_code",
+        "branch_number",
+        "account_number"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "source_account_key",
+    "amount",
+    "idempotency_key",
+    "destination"
+  ],
+  "additionalProperties": false
+}

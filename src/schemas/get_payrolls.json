@@ -1,0 +1,24 @@
+{
+  "title": "GetPayrolls",
+  "type": "object",
+  "properties": {
+    "limit": {
+      "type": "string",
+      "pattern": "^(100|[1-9]?[0-9])$"
+    },
+    "page": {
+      "type": "string",
+      "pattern": "^[0-9]{1,9}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "paid",
+        "canceled"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

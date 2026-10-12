@@ -1,0 +1,6 @@
+from repositories.company_repository import CompanyRepository
+from repositories.position_repository import PositionRepository
+from repositories.employee_repository import EmployeeRepository
+from repositories.account_repository import AccountRepository
+from repositories.transfer_repository import TransferRepository
+from repositories.payroll_repository import PayrollRepository
